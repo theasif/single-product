@@ -1,0 +1,168 @@
+/*-------------------------------------------------------
+03. BTN Css  
+---------------------------------------------------------*/
+
+
+
+
+/*Theme Button*/
+
+@mixin pad {
+	padding: 1.5rem 3.5rem;
+}
+
+.btn-trn {
+	background-color: transparent;
+	border: 2px solid var(--clr-white);
+	font-size: 1.6rem;
+	color: var(--clr-white);
+	@include bor-rad(5px);
+	font-weight: 500;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 1;
+	@include pad;
+	transition: all .5s ease;
+	&:hover {
+		border: 2px solid var(--clr-def-2);
+		background-color: var(--clr-def-2);
+		color: var(--clr-white);
+	}
+}
+
+.btn-trn-2 {
+	background-color: transparent;
+	border: 2px solid var(--clr-def);
+	font-size: 1.6rem;
+	color: var(--clr-heading);
+	@include bor-rad(5px);
+	font-weight: 500;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 1;
+	@include pad;
+}
+
+.btn-2 {
+	font-weight: 600;
+    color: var(--clr-def);
+}
+
+.btn-3 {
+	display: inline-block;
+	padding: 2rem 4rem;
+	background-color: var(--clr-menu);
+	color: var(--clr-white);
+	border-radius: 4px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	line-height: 1;
+	i {
+		margin-left: 1rem;
+	}
+	&:hover {
+		background-color: var(--clr-black); 
+		color: var(--clr-white); 
+	}
+}
+
+.btn-4 {
+	display: inline-block;
+    padding: 2rem;
+    background-color: var(--clr-def-2);
+    color: var(--clr-white);
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.0015em;
+	&:hover {
+		background-color: var(--clr-def);
+		color: var(--clr-white);
+	}
+}
+
+.btn-5 {
+  padding: 1.3rem 4rem;
+  font-weight: 600;
+  border: 2px solid var(--clr-def);
+  color: var(--clr-def);
+  transition: all .5s ease; 
+	&:hover {
+		background-color: var(--clr-def-2);
+		border: 2px solid var(--clr-def-2);
+		color: var(--clr-white); 
+	}
+}
+
+.btn-sub {
+    height: 7rem;
+    width: 7rem;
+    border: none;
+    background-color: var(--clr-def);
+    border-radius: 2px;
+    outline: none;
+}
+
+//Service
+
+.service-btn,
+.service-btn:link,
+.service-btn:visited {
+  text-transform: uppercase;
+  padding: 20px 30px 17px 30px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+  font-weight: 600;
+  color: var(--clr-heading);
+  line-height: 1; }
+
+.service-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.service-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.btn-white {
+  background-color: #fff;
+  color: #777; }
+
+.service-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn-white::after {
+  background-color: #fff; }
+
+.service-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards; }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+

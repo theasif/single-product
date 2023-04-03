@@ -1,0 +1,56 @@
+/*-------------------------------------------------------
+12. Nav css 
+---------------------------------------------------------*/
+
+.nav-profile {
+	.dropdown-menu[data-bs-popper] {
+		top: 191%;
+		left: -19rem;
+		margin-top: var(--bs-dropdown-spacer);
+	}
+	.user-dropdown {
+		.dropdown-toggle {
+			color: var(--clr-def);
+		}
+		.dropdown-menu {
+			min-width: 22rem;
+		}
+	}
+}
+
+.user-area {
+	display: flex;
+	align-items: center;
+	gap: 6rem;
+	h6 {
+		color: var(--clr-white);
+	}
+	.user-profile {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+}
+
+.user-dropdown {
+	.dropdown-toggle {
+		color: var(--clr-white);
+		background-color: transparent;
+		border: none;
+		outline: none;
+		font-family: var(--font-4);
+		font-weight: 400;
+		font-size: 18px;
+	}
+	.dropdown-menu {
+		min-width: 16rem;
+		li {
+			.dropdown-item {
+				color: #999999;
+				font-size: 1.5rem;
+				font-family: var(--font-4);
+				font-weight: 400;
+			}
+		}
+	}
+}

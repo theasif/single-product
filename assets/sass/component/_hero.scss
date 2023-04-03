@@ -1,0 +1,153 @@
+
+/*-------------------------------------------------------
+08. Hero css 
+---------------------------------------------------------*/
+
+
+@mixin hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+
+.hero-single.hero-overlay::before {
+	top: 0;
+	left: 0;
+}
+
+.hero-left-img {
+	filter: brightness(.6);
+}
+
+.z-index-5 {
+	z-index: 5;
+}
+
+.hero-single {
+	@include hero;
+	overflow: hidden;
+	.hero-content {
+		z-index: 7;
+		h2 {
+			font-weight: 700;
+			font-size: 72px;
+			line-height: 96px;
+			color: var(--clr-white);
+			margin-bottom: 3rem;
+			text-transform: capitalize;
+		}
+		p {
+			color: var(--clr-white);
+			line-height: 3.2rem; 
+			margin-bottom: 6rem;
+			padding: 0 10rem;
+		}
+		.para {
+			color: var(--clr-white);
+			line-height: 3.2rem; 
+			padding-right: 31%;
+			margin-bottom: 6rem;
+			padding-left: 0;
+		}
+	}
+}
+
+//Owl Carousel 
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-sldr {
+	.hero-single {
+		.hero-content {
+			h2 {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 500ms ease;
+				transform: translateY(-20px);
+			}
+			p {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 500ms ease;
+				transform: translateX(-50px);
+			}
+			.hero-btn {
+				transform: scaleY(0);
+				transition: all 500ms ease;
+				transition-delay: 2000ms;
+				transform-origin: bottom;
+			}
+		}
+		.hdr-pic {
+			opacity: 0;
+			visibility: hidden;
+			transition: all 500ms ease;
+			transform: translateY(50px);
+		}
+	}
+}
+
+
+.hero-sldr {
+	.swiper-slide-active {
+		&.hero-single {
+			.hero-content {
+				h2 {
+					opacity: 1;
+					visibility: visible;
+					transition-delay: 800ms;
+					transform: translateY(0px);
+				}
+				p {
+					opacity: 1;
+					visibility: visible;
+					transition-delay: 1600ms;
+					transform: translateX(0px);
+				}
+				.hero-btn {
+    				transform: scale(1);
+				}
+			}
+			.hdr-pic {
+				opacity: 1;
+				visibility: visible;
+				transition-delay: 1200ms;
+				transform: translateY(0px);
+			}
+		}
+	}
+}
+
