@@ -335,7 +335,6 @@ label {
     line-height: 1;
     letter-spacing: 0.8px;
     margin-bottom: 3rem;
-    text-transform: capitalize;
     font-size: 5.6rem;
 }
 .site-title h2 span {
@@ -1179,7 +1178,6 @@ label {
     line-height: 96px;
     color: var(--clr-white);
     margin-bottom: 3rem;
-    text-transform: capitalize;
 }
 .hero-single .hero-content h4 {
     font-size: 40px;
@@ -1283,6 +1281,11 @@ label {
 }
 .top-bar-area .top-three ul li i {
     color: var(--clr-white);
+}
+@media only screen and (min-width: 300px) and (max-width: 1100px){
+    .top-bar-area{
+        display: none !important;
+    }
 }
 /*-------------------------------------------------------
 13. Navbar css 
@@ -1837,31 +1840,44 @@ label {
 .cart-btn-wrapper {
     padding-top: 20px;
 }
-
-.cart-btn-wrapper .form-control {
-    line-height: 3.2;
-    border-radius: 100px;
-    width: 90px !important;
-    height: 65px;
-    margin-right: 10px;
-    font-size: 20px !important;
-}
-.cart-btn-wrapper .btn-secondary-fast{
-    margin-left: 10px;
+.cart-btn-wrapper input{
+    padding: 10px;
+    margin-top: -10px;
+    border-radius: 10px;
+    border: 2px solid #009E43;
     font-size: 18px;
-    color: white !important;
-    padding: 20px 50px;
-    transition: all ease 0.3s;
-    border-color: var(--primary-color);
-    background-color: #FFC003;
-    border-radius: 100px;
-    border: 2px solid transparent;
+ }
+ .cart-btn-wrapper .btn-secondary-fast{
+     margin-top: 40px;
+ }
+ .cart-btn-wrapper .btn-secondary-fast a{
+     margin-left: 10px;
+     font-size: 18px;
+     color: white !important;
+     padding: 20px 50px;
+     transition: all ease 0.3s;
+     border-color: var(--primary-color);
+     background-color: #FFC003;
+     border-radius: 100px;
+     border: 2px solid transparent;
+ }
+
+.cart-btn-wrapper .btn-secondary-fast a:hover{
+     background-color: #ffc003d5;
+     border: 2px solid white;
+ }
+.btn-secondary-fast-add a{
+ margin-left: 10px;
+ font-size: 18px;
+ color: white !important;
+ padding: 20px 50px;
+ transition: all ease 0.3s;
+ border-color: var(--primary-color);
+ background-color: #009E43;
+ border-radius: 100px;
+ border: 2px solid transparent;
 }
 
-.cart-btn-wrapper .btn-secondary-fast:hover{
-    background-color: #ffc003d5;
-    border: 2px solid white;
-}
 .Slider-part .heading {
     padding-top: 20px;
     border-top: 5px solid #6EB623;
@@ -1901,13 +1917,40 @@ label {
 border: 1px solid rgb(219, 214, 214);
 padding: 30px 20px;
 }
-       
+       /* ========================================== */
+       .login-form .m-form form button:hover{
+        background:#17b458;
+    }
+    .login-form .m-form form button{
+        color: white;
+        background:#009E43;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+    }
+    .login-form .m-form form .form-title h3{
+        color: rgb(73, 71, 71);
+        font-weight: 700;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+    .login-form .m-form form .form-control{
+        height: 40px;
+        font-size: 20px;
+    }
+    .login-form .m-form form{
+        border: 1px solid rgb(180, 179, 179);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+       /* ========================================== */
 /* Footer */
 .fast-footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    margin-top: 200px;
+    margin-top: 100px;
     overflow: hidden;
 }
 

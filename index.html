@@ -92,7 +92,7 @@
                         <div class="search-cart nav-profile">
                             <div class="user-area">
                                 <div class="user-profile">
-                                   <a href="#">Login</a>
+                                   <a href="login.html">Login</a>
                                     <div class="user-dropdown">
                                         <div class="dropdown">
                                             <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -445,15 +445,22 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="cart-btn-wrapper d-flex">
-                        <input type="text" class="form-control checkout-form-input" placeholder="1">
-                        <a class="btn-trn-2" href="#"> Add to Cart </a>
-                        <a class="btn-secondary-fast" href="#"> Add to Wish List </a>
+                    <div class="cart-btn-wrapper">
+                       <div class=" d-flex">
+                        <input class="qty-input" type="number" min="1" max="10" placeholder="1">
+                        <div class="btn-secondary-fast-add">
+                            <a href="#">Add to Cart</a>
+                        </div>
+                       </div>
+                       <div class="btn-secondary-fast">
+                            <a href="#">Add to Wish List</a>
+                       </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+   
     <!-- Fast Cart -->
 
     <!-- ============================ -->
@@ -796,4 +803,3 @@
 </body>
 
 </html>
-<!-- Start Date 07/03/2023 -->
