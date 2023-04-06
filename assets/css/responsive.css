@@ -1,5 +1,16 @@
 
-
+@media only screen and (min-width: 986px) and (max-width: 1202px){
+	.contact-info .right-part .payment .content ul li .btn-teritary-fast {
+		font-size: 12px !important;
+	}
+	.contact-info .left-part .Continue-shipping ul li .bt-2 {
+	font-size: 12px !important;
+	}
+	.contact-info .left-part .Continue-shipping ul li .bt-1 {
+		font-size: 12px !important;
+	
+	}
+}
 /* Tablet Layout: 768px.*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
@@ -165,7 +176,16 @@
 			font-size: 40px;
 			line-height: 50px;
 		}
+		.contact-info .right-part .payment .content ul li .btn-teritary-fast {
+			font-size: 11px !important;
+		}
+		.contact-info .left-part .Continue-shipping ul li .bt-2 {
+		font-size: 12px !important;
+		}
+		.contact-info .left-part .Continue-shipping ul li .bt-1 {
+			font-size: 12px !important;
 		
+		}
 	
 	.main-banner .banner-content .left-content{
 		padding: 20px;

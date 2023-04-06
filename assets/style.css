@@ -1916,8 +1916,16 @@ label {
 .Slider-part .swiper-slide .swiper-content{
 border: 1px solid rgb(219, 214, 214);
 padding: 30px 20px;
+margin-bottom: 100px;
 }
+.Slider-part{
+    overflow: hidden;
+ 
+} 
        /* ========================================== */
+       .login-form{
+        padding-bottom: 100px;
+       }
        .login-form .m-form form button:hover{
         background:#17b458;
     }
@@ -1944,13 +1952,226 @@ padding: 30px 20px;
         border-radius: 10px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
+    .login-banner .Content .banner-title{
+        font-size: 60px;
+        color: white;
+        font-weight: 700;
+     }
+    .login-banner .Content ul li a i{
+        margin-right: 5px;
+    }
+       .login-banner .Content ul li a {
+        color: white;
+       }
+       .login-banner .Content ul li{
+        margin-right: 20px;
+       }
+        .login-banner .Content ul{
+            display: flex;
+        }
+        .login-banner .Content{
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 70vh;
+        }
+        .login-banner{
+            overflow: hidden;
+            height: 70vh;
+            background: rgb(51,121,9);
+            background: linear-gradient(90deg, rgba(51,121,9,1) 0%, rgba(28,141,68,1) 100%);
+        }
        /* ========================================== */
+       /* ======================= check out page Style start hear ========================== */
+    .contact-info .left-part .Continue-shipping{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        }
+        .contact-info .left-part .Continue-shipping ul li .bt-2{
+        font-size: 16px;
+        color: white;
+        padding:15px 20px;
+        transition: all ease 0.3s;
+        border: 2px solid transparent;
+        background-color: #f0d55c;
+        border-radius: 35px;
+        }
+        .contact-info .left-part .Continue-shipping ul li .bt-2:hover{
+        color: #009E43;
+        border: 2px solid #009E43;
+        background: white;
+        }
+        .contact-info .left-part .Continue-shipping ul li .bt-1:hover{
+        color: #009E43;
+        border: 2px solid #009E43;
+        background: white;
+        }
+        .contact-info .left-part .Continue-shipping ul li .bt-1{
+        font-size: 16px;
+        color: white;
+        padding:15px 20px;
+        transition: all ease 0.3s;
+        border: 2px solid transparent;
+        background-color: #009E43;
+        border-radius: 35px;
+        margin-right: 10px;
+        }
+    .contact-info .left-part .two-form-check .form-check{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+        .contact-info .left-part .two-form-check .form-check input{
+        padding: 0;
+        }
+        .contact-info .left-part .form-floating textarea{
+        border: 1px solid #009E43;
+        font-size: 18px;
+        }
+    .contact-info .left-part select{
+        font-size: 18px;
+        border: 1px solid#009E43;
+        padding: 10px;
+    }
+        .contact-info .left-part .second-input input{
+        font-size: 18px;
+        border: 1px solid#009E43;
+        padding: 10px;
+        }
+    .contact-info .left-part .first-input .form-check-input{
+        padding: 0;
+    }
+    .contact-info .left-part .first-input .form-check-label{
+        font-size: 15px;
+    }
+    .contact-info .left-part .first-input input{
+        font-size: 18px;
+        border: 1px solid#009E43;
+        padding: 10px;
+    }
+    .contact-info .left-part .title h3{
+        color:rgb(24, 23, 23);
+        font-weight: 600;
+    }
+    .contact-info .left-part{
+        border-radius: 5px;
+        padding: 35px 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+ .contact-info .right-part .payment .sing-buton a{
+            font-size: 16px;
+            color: white;
+            padding:15px 60px;
+            transition: all ease 0.3s;
+            border: 2px solid transparent;
+            background-color: #009E43;;
+            border-radius: 35px;
+           
+        }
+        .contact-info .right-part .payment .sing-buton a:hover{
+            border: 2px solid #009E43;
+            background: white;
+            color: #009E43;
+        }
+        .contact-info .right-part .payment .title h4{
+            color:rgb(24, 23, 23);
+            font-weight: 600;
+        }
+        .contact-info .right-part .payment .title{
+            margin-top: 30px;
+        }
+        .contact-info .right-part .payment .content{
+            margin-top: 30px;
+        }
+        .contact-info .right-part .payment .content ul {
+            margin-bottom: 50px;
+        }
+      
+ 
+        .contact-info .right-part .payment .content ul li .btn-teritary-fast{
+            font-size: 16px;
+            color: white;
+            padding:15px 20px;
+            transition: all ease 0.3s;
+            border: 2px solid transparent;
+            background-color: #009E43;
+            border-radius: 35px;
+           
+        }
+        .contact-info .right-part .payment .content ul li .btn-teritary-fast:hover{
+            border: 2px solid #009E43;
+            background: white;
+            color: #009E43;
+        }
+        .contact-info .right-part .two-sub-total .first-sub-total{
+            margin-bottom: 10px;
+        }
+        .contact-info .right-part .two-sub-total .second-sub-total{
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgb(228, 228, 228);
+            padding-bottom: 10px;
+        }
+ 
+        .contact-info .right-part .input-part {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .contact-info .right-part .input-part .input-group button{
+            font-size: 22px;
+            padding: 10px;
+            font-weight: 500;
+            color: #009E43;
+            border: 1px solid #009E43;
+            transition: 0.5s;
+        }
+        .contact-info .right-part .input-part .input-group button:hover{
+            background: #009E43;
+            color: white;
+        }
+         .contact-info .right-part .input-part .input-group input{
+         font-size: 22px;
+         border: 1px solid#009E43;
+         padding: 10px;
+          
+         }
+        .contact-info .right-part .order-card-line .order-card .first-burner h5{
+        
+            color:rgb(24, 23, 23);
+            width: 600;
+
+        }
+        .contact-info .right-part .title h2{
+            color:rgb(24, 23, 23);
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .contact-info .right-part{
+            padding: 30px 30px 70px 30px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            border-radius: 5px;
+        }
+        .contact-info .right-part .order-card-line{
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(228, 228, 228);
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        .contact-info .right-part .order-card-line .order-card img{
+            width: 90px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        .contact-info{
+            overflow: hidden;
+            padding: 100px 0;
+        }
+ /* ======================= check out page Style end hear ========================== */
 /* Footer */
 .fast-footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    margin-top: 100px;
     overflow: hidden;
 }
 
