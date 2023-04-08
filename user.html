@@ -91,7 +91,7 @@
                         <div class="search-cart nav-profile">
                             <div class="user-area">
                                 <div class="user-profile">
-                                   <a href="#">Login</a>
+                                   <a href="login.html">Login</a>
                                     <div class="user-dropdown">
                                         <div class="dropdown">
                                             <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -159,13 +159,13 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="Content">
-                            <h2 class="banner-title"> Checkout </h2>
+                            <h2 class="banner-title"> User Profile </h2>
                             <ul>
                                 <li>
                                     <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
                                 </li>
                                 <li>
-                                    <a href="contactUs.html"><i class="fa-solid fa-arrow-rotate-right"></i>CheckOut</a>
+                                    <a href="user.html"><i class="fa-solid fa-arrow-rotate-right"></i>User</a>
                                 </li>
                             </ul>
                         </div>
@@ -173,191 +173,227 @@
                 </div>
             </div>
         </div>
-      
-        <!-- ==================================== -->
-    <div class="contact-info">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-7 col-md-7 col-md-12">
-                    <div class="left-part">
-                        <div class="title">
-                            <h3>Contact information</h3>
-                        </div>
-                        <div class="first-input mb-3">
-                            <input type="text" placeholder="Email Or Phone Number" class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                            <div class="mb-3 mt-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Email me with news and offers</label>
-                              </div>
-                        </div>
-                        <div class="second-input">
-                            <div class="title mt-5">
-                                <h3>Billing Details</h3>
+        <!-- ============================= -->
+        <div class="nav-tab">
+           <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="profile-imge-main text-center">
+                            <div class="profile-imge">
+                                <img src="assets/img/header/avatar.jpg">
+                                <span class="profile-imge-button">
+                                    <i class="fa-solid fa-camera-retro"></i>
+                                </span>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <label for="exampleInputText" class="form-label">First Name *</label>
-                                    <input type="text" placeholder="First Name" class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                                </div>
-                                <div class="col-6">
-                                    <label for="exampleInputText" class="form-label">Last Name *</label>
-                                    <input type="text" placeholder="Last Name" class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <label for="exampleInputText" class="form-label">Company Name *</label>
-                                    <input type="text" placeholder="Company Name" class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <label for="exampleInputText" class="form-label">Address *</label>
-                                    <input type="text" placeholder="Address" class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <input type="text" placeholder="Apartment , etc" class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                                </div>
-                                <div class="col-12 mt-4">
-                                    <label for="exampleInputText" class="form-label">Town / City *</label>
-                                    <input type="text" placeholder="City" class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                                </div>
-                                <div class="col-6 mt-4">
-                                    <label for="exampleInputText" class="form-label">Country/region *</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Bangladesh</option>
-                                        <option value="1">India</option>
-                                        <option value="2">Napal</option>
-                                        <option value="3">Butan</option>
-                                    </select>
-                                </div>
-                                <div class="col-6 mt-4">
-                                    <label for="exampleInputText" class="form-label">Postal Code *</label>
-                                    <input type="text" placeholder="Postal Code " class="form-control" id="exampleInputText" aria-describedby="textHelp">
-                                </div>
-                              <div class="row">
-                                <div class="two-form-check">
-                               
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Save this information for next time
-                                        </label>
-                                      </div>
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDe">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Save this information for next time
-                                        </label>
-                                      </div>
-                                </div>
-                              </div>
-                                <div class="col-12 mt-4">
-                                    <div class="form-floating">
-                                        <label for="floatingTextarea2">Order Notes</label>
-                                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">My Profile</button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"> Order </button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="first-form">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="disabledTextInput" class="form-label">First name #</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="First name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="disabledTextInput" class="form-label">Last name #</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Last name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="email" class="form-control" placeholder="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="disabledTextInput" class="form-label">Company #</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Company">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="disabledTextInput" class="form-label">Website</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="text" id="disabledTextInput" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="disabledTextInput" class="form-label">Address #</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Street">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <div class="row">
+                                                    <div class="col-lg-8">
+                                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="City">
+                                                       </div>
+                                                       <div class="col-lg-4">
+                                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="state">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="disabledTextInput" class="form-label">User name #</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="text" id="disabledTextInput" class="form-control" placeholder="User name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="disabledTextInput" class="form-label">Time Zone #</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                                    <option value="Alaska">(GMT-09:00) Alaska</option>
+                                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="Continue-shipping">
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a class="bt-1" href="#">Continue TO Shipping</a>
-                                        </li>
-                                        <li>
-                                            <a class="bt-2" href="#">Return To Cart </a>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
-
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, quisquam.</div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et iusto earum voluptatem, vel, enim voluptates omnis ab doloremque incidunt dolores quis harum optio ratione, accusantium sapiente. Dicta voluptas repudiandae sed?</div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor sit amet.</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-md-12">
-                    <div class="right-part">
-                        <div class="title text-center">
-                            <h2>Your Order Summary</h2>
-                        </div>
-                        <div class="order-card-line d-flex align-items-center">
-                            <div class="order-card d-flex justify-content-center">
-                                <img src="assets/img/header/video_img.jpg">
-                                <div class="first-burner">
-                                    <h5>First Burner </h5>
-                                    <p>First Burner</p>
-                                </div>
-                            </div>
-                            <div class="amount">
-                                <p>$400</p>
-                            </div>
-                        </div>
-                        <div class="order-card-line d-flex align-items-center">
-                            <div class="order-card d-flex justify-content-center">
-                                <img src="assets/img/header/video_img.jpg">
-                                <div class="first-burner">
-                                    <h5>First Burner </h5>
-                                    <p>First Burner</p>
-                                </div>
-                            </div>
-                            <div class="amount">
-                                <p>$400</p>
-                            </div>
-                        </div>
-                        <div class="order-card-line d-flex align-items-center">
-                            <div class="order-card d-flex justify-content-center">
-                                <img src="assets/img/header/video_img.jpg">
-                                <div class="first-burner">
-                                    <h5>First Burner </h5>
-                                    <p>First Burner</p>
-                                </div>
-                            </div>
-                            <div class="amount">
-                                <p>$400</p>
-                            </div>
-                        </div>
-                        <div class="input-part">
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Gift a card or discount code" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Apply</button>
-                              </div>
-                        </div>
-                        <div class="two-sub-total">
-                            <div class="first-sub-total d-flex justify-content-between">
-                                <div>Subtotal </div>
-                                <div>$860.00</div>
-                            </div>
-                            <div class="second-sub-total d-flex justify-content-between">
-                                <div>Shipping </div>
-                                <div>Calculated at next step</div>
-                            </div>
-                            <div class="third-sub-total d-flex justify-content-between">
-                                <div> Total </div>
-                                <div>$860.00</div>
-                            </div>
-                        </div>
-                        <div class="payment">
-                            <div class="title">
-                                <h4>Payment</h4>
-                            </div>
-                            <div class="content">
-                                <ul class="d-flex justify-content-between">
-                                    <li>
-                                        <a class="btn-teritary-fast" href="#">Credit Card</a>
-                                    </li>
-                                    <li>
-                                        <a class="btn-teritary-fast" href="#">Bank Transfer</a>
-                                    </li>
-                                    <li>
-                                        <a class="btn-teritary-fast" href="#">PayPle</a>
-                                    </li>
-                                </ul>
-                                <div class="sing-buton text-center">
-                                    <a href="#">CheckOut Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           </div>
         </div>
-    </div>
+        <style>
+            .nav-tab .form-group select{
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #009E43;
+            }
+            .nav-tab .first-form .form-group{
+                margin-top: 20px;
+            }
+            .nav-tab .first-form input{
+                padding: 10px;
+                font-size: 18px;
+                border: 1px solid #009E43;
+            }
+            .nav-tab .first-form{
+                padding: 40px;
+            }
+            .nav-tab .profile-imge-main .profile-imge .profile-imge-button i{
+                background: #89968e;
+                padding: 10px;
+                border-radius: 50%;
+                color: white;
+            }
+            .nav-tab .profile-imge-main .profile-imge .profile-imge-button{
+                position: absolute;
+                z-index: 2;
+                bottom: 15px;
+                right: 40px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                border-radius: 50%;
+                line-height: 38px;
+                transition: ease all .1s;
+            }
+            .nav-tab .profile-imge-main .profile-imge img{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                border: 8px solid #009E43;
+            }
+            .nav-tab .profile-imge-main{
+                margin-top: auto;
+                margin-bottom:20px;
+                border-radius: 50%;
+                position: relative;
+                cursor: pointer;
 
-<!-- ============================= -->
+            }
+            .nav-tab .profile-imge-main .profile-imge{
+                border-radius: 50%;
+                padding: 5px;
+            }
+            .nav-tab button{
+                margin-bottom: 10px;
+                padding: 15px 0;
+                font-size: 18px;
+            }
+            .nav-tab{
+                overflow: hidden;
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+        </style>
     <!-- Footer -->
     <footer class="fast-footer" style=" background-image: url('assets/img/header/footer_bg.png');">
         <div class="container">

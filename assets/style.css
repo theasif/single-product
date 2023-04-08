@@ -1263,10 +1263,14 @@ label {
     transition-delay: 1200ms;
     transform: translateY(0px);
 }
+html {
+    scroll-behavior: smooth;
+  }
 /*-------------------------------------------------------
 21. Footer css #37325A
 ---------------------------------------------------------*/
 /*11*/
+
 .top-bar-area ul {
     display: flex;
 }
