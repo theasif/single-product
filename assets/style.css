@@ -2171,6 +2171,104 @@ margin-bottom: 100px;
             padding: 100px 0;
         }
  /* ======================= check out page Style end hear ========================== */
+    /* ============= User page  style start hear ============ */
+    .tab-two .content .order-1 .left-part .des-part h5{
+        color: #4b4d4c;
+    }
+    .tab-two .content .order-1 .left-part .des-part p{
+        color: #4b4d4c;
+    }
+    .tab-two .content .right-part  button{
+        border: none;
+        background: none;
+        font-size: 16px;
+        color: rgb(53, 117, 236);
+    }
+     .tab-two .content .order-1{
+        margin-top: 20px;
+        border-bottom: 1px solid rgb(187, 181, 181);
+     }
+    .tab-two .content .order-1 .left-part .des-part{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+    }
+    .tab-two .order-1 .left-part img{
+        max-width: 100px;
+        margin-right: 10px;
+    }
+    .tab-two .order-title h2{
+        color: rgb(51, 50, 50);
+    }
+    .tab-two{
+        padding: 40px;
+        border: 1px solid rgb(219, 219, 219);
+        border-radius: 10px;
+    }
+    .nav-tab .form-group select{
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #009E43;
+    }
+    .nav-tab .first-form .form-group{
+        margin-top: 20px;
+    }
+    .nav-tab .first-form input{
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #009E43;
+    }
+    .nav-tab .first-form{
+        padding: 40px;
+    }
+    .nav-tab .profile-imge-main .profile-imge .profile-imge-button i{
+        background: #89968e;
+        padding: 10px;
+        border-radius: 50%;
+        color: white;
+    }
+    .nav-tab .profile-imge-main .profile-imge .profile-imge-button{
+        position: absolute;
+        z-index: 2;
+        bottom: 15px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 38px;
+        transition: ease all .1s;
+    }
+    .nav-tab .profile-imge-main .profile-imge img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 8px solid #009E43;
+    }
+    .nav-tab .profile-imge-main{
+        margin-top: auto;
+        margin-bottom:20px;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+
+    }
+    .nav-tab .profile-imge-main .profile-imge{
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .nav-tab button{
+        margin-bottom: 10px;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    .nav-tab{
+        overflow: hidden;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+/* ============= User page  style start hear ============ */
 /* Footer */
 .fast-footer {
     background-size: cover;
